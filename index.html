@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <!--A 3x3 container was created, where each section contains its own information-->
+        <div class="container">
+            <div class="item name">
+                <div id="numPokemon">#001</div>
+                <div id="nameENG">Bulbasaur</div>
+            </div>
+            
+            <!--Label ready for a future use in JS-->
+            <div class="item infoPhy">
+                <div class="heigth">Height: <label for="height">0,7m</label></div>
+                <div class="weigth">Weight: <label for="weight">6,0 kg</label></div>
+            </div>
+
+            <div class="item pokemon">
+                <!--Name ready for a future use in JS-->
+                <!--The pokemon was done as a background for that section, and opacity was applied to the text
+                in order to give the transparent effect-->
+                <div class="nameJP">フシギダネ</div>
+            </div>
+
+            <div class="item infoSts">
+                <div class="type">
+                    <img src="pictures/grass.png" alt="grass">
+                    <img src="pictures/poison.png" alt="poison">
+                </div>
+                <div style="font-weight: bolder; font-size: xx-large;margin-bottom: 15px;">Base stats:</div>
+                <div class="Stats">
+                    <!--Label ready for a future use in JS-->
+                    <div id="statsFormat">HP: <label for="HP">45</label></div>
+                    <div id="statsFormat">ATTACK: <label for="ATK">49</label></div>
+                    <div id="statsFormat">DEFENSE: <label for="DEF">49</label></div>
+                    <div id="statsFormat">SP. ATTACK: <label for="SP_ATK">65</label></div>
+                    <div id="statsFormat">SP. DEFENSE: <label for="SP_DEF">65</label></div>
+                    <div id="statsFormat">SPEED: <label for="SPD">45</label></div>
+                </div>
+            </div>
+
+            <div class="item region">
+                <!--Label ready for a future use in JS-->
+                Region: <label for="region">Kanto</label>
+            </div>
+        </div>
+    </body>
+
+</html>

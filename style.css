@@ -1,0 +1,109 @@
+html, body{
+    background-color: #92D1B3;
+    font-family: Calibri;
+    text-shadow: 1px 1px 2px gray;
+    margin-left: 10px;
+    height: 97%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr 1fr; 
+    grid-template-rows: 0.7fr 1.6fr 0.7fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "name name name"
+        "infoPhysical pokemon infoStats"
+        "region footer footer";
+    height: 100%;
+    
+}
+
+.item{
+    /* border: 1px solid black; */
+    color: white;
+}
+
+.name{
+    grid-area: name;
+    font-weight: bolder;
+}
+
+#numPokemon{ font-size: medium; }
+#nameENG{ font-size: xx-large; }
+
+.infoPhy{
+    grid-area: infoPhysical;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.pokemon{
+    grid-area: pokemon;
+    height: 280px;
+    background-image: url('pictures/001Bulbasaur.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.nameJP{
+    font-size: 80px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: black;
+    opacity: .4;
+}
+
+.pokemon img{
+    width: 50%;
+}
+
+.infoSts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: left;
+}
+
+.infoSts img{
+    width: 8%;
+}
+
+.region{
+    font-size: medium;
+    /* writing-mode: vertical-rl; */
+    transform: rotate(270deg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    font-size: x-small;
+    gap: 5px;
+    max-width: 260px;
+}
+
+#statsFormat{
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 10%;
+    background-color: white;
+    padding: 5px;
+    margin-top: 8px;
+    border-radius: .5em;
+    
+}
+
